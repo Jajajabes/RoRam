@@ -41,6 +41,86 @@
             /* Ajustar el valor a un número mayor para hacer la animación más lenta */
             animation-duration: 2s; /* Por ejemplo, aquí la animación dura 2 segundos */
             }
+            .about {
+            background-color: #f5f5f5;
+            padding: 80px 0;
+        }
+
+        .about-img img {
+            max-width: 100%;
+            display: block;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        .about-text h2 {
+            font-size: 42px;
+            font-weight: bold;
+            color: #1a237e;
+            margin-bottom: 20px;
+            animation: fadeInLeft 1s ease-in-out;
+        }
+
+        .about-text p {
+            font-size: 18px;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            animation: fadeInRight 1s ease-in-out;
+        }
+
+        .about-text a.btn {
+            display: inline-block;
+            background-color: #1a237e;
+            color: #fff;
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        .about-text a.btn:hover {
+            background-color: #4d4d9f;
+        }
+
+        /* Nuevas animaciones personalizadas */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeInRight {
+            from {
+                opacity: 0;
+                transform: translateX(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+            
         </style>
 
     </head>
