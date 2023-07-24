@@ -7,11 +7,14 @@
         <meta content="Cleaning Company Website Template" name="keywords">
         <meta content="Cleaning Company Website Template" name="description">
 
+        <!-- Enlace a la biblioteca AOS -->
+        <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
         <!-- Favicon -->
         <link href="img/favicon.ico" rel="icon">
 
         <!-- Google Font -->
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
         
         <!-- CSS Libraries -->
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
@@ -21,6 +24,18 @@
 
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
+        <style>
+            /* Estilo para el contenedor de cada servicio */
+            .feature-item {
+                margin-bottom: 40px;
+            }
+    
+            /* Estilo para la imagen de cada servicio */
+            .feature-item img {
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+        </style>
     </head>
 
     <body>
@@ -74,17 +89,19 @@
                     </div>
                     <div class="hero row align-items-center">
                         <div class="col-md-7">
-                            <h2>Best & Trusted</h2>
-                            <h2><span>Cleaning</span> Service</h2>
-                            <p>We provide cleaning and disinfection services in Calgary and surrounding areas, with the purpose of creating a comfortable and clean environment in your own space. Trust us to keep your home or office spotless and healthy. Experience the difference in the quality of life we offer, contact us now!</p>
+                            <h2 class="animate__animated animate__bounceInLeft">Best & Trusted</h2>
+                            <h2 class="animate__animated animate__bounceInLeft"><span>Cleaning</span> Service</h2>
+                            <p class="animate__animated animate__fadeInUp">
+                                We provide cleaning and disinfection services in Calgary and surrounding areas, with the purpose of creating a comfortable and clean environment in your own space. Trust us to keep your home or office spotless and healthy. Experience the difference in the quality of life we offer, contact us now!
+                            </p>
                         </div>
                         <div class="col-md-5">
-                            <div class="form">
+                            <div class="form animate__animated animate__fadeInRight">
                                 <h3>Get A Quote</h3>
                                 <form action="mailto:jabesmonroy@gmail.com" method="post" enctype="text/plain">
-                                    <input class="form-control" type="text" name="Your Name" placeholder="Your Name">
-                                    <input class="form-control" type="text" name="Mobile Number" placeholder="Mobile Number">
-                                    <div class="control-group">
+                                    <input class="form-control animate__animated animate__bounceIn" type="text" name="Your Name" placeholder="Your Name">
+                                    <input class="form-control animate__animated animate__bounceIn" type="text" name="Mobile Number" placeholder="Mobile Number">
+                                    <div class="control-group animate__animated animate__bounceIn">
                                         <select class="custom-select" name="Choose a service">
                                             <option selected>Choose a service</option>
                                             <option value="House Cleaning">House Cleaning</option>
@@ -92,19 +109,19 @@
                                             <option value="Office Cleaning">Office Cleaning</option>
                                         </select>
                                     </div>
-                                    <textarea class="form-control" name="Comment" placeholder="Comment"></textarea>
-                                    <button class="btn btn-block" type="submit">Get A Quote</button>
+                                    <textarea class="form-control animate__animated animate__bounceIn" name="Comment" placeholder="Comment"></textarea>
+                                    <button class="btn btn-block animate__animated animate__bounceIn" type="submit">Get A Quote</button>
                                 </form>                                
                             </div>
                         </div>
                     </div>
+                    
                 </div>
             </div>
             <!-- Header End -->
             
-            
             <!-- About Start -->
-            <div class="about">
+            <div class="about" data-aos="fade-up">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-5 col-md-6">
@@ -124,7 +141,6 @@
                 </div>
             </div>
             <!-- About End -->
-
 
             <!-- Service Start -->
             <div class="service">
@@ -181,18 +197,18 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-5">
-                            <div class="section-header left">
+                            <div class="section-header left" data-aos="fade-right">
                                 <p>Why Choose Us</p>
                                 <h2>Expert Cleaners and World Class Services</h2>
                             </div>
-                            <p>
+                            <p data-aos="fade-right">
                                 Choose our cleaning service to enjoy an impeccable and welcoming home, with a focus on wellness and respect for the environment. Our highly trained team strives to provide exceptional results and guaranteed satisfaction, so make the smart choice for a cleaner and healthier home environment!
                             </p>
-                            <a class="btn" href="service.html">Learn More</a>
-
+                            <a class="btn" href="service.html" data-aos="fade-right">Learn More</a>
+        
                         </div>
                         <div class="col-md-7">
-                            <div class="row align-items-center feature-item">
+                            <div class="row align-items-center feature-item" data-aos="fade-left">
                                 <div class="col-5">
                                     <img src="img/Professional-House.jpg" alt="Feature">
                                 </div>
@@ -203,7 +219,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="row align-items-center feature-item">
+                            <div class="row align-items-center feature-item" data-aos="fade-left">
                                 <div class="col-5">
                                     <img src="img/move-out-cleaning.jpg" alt="Feature">
                                 </div>
@@ -214,7 +230,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="row align-items-center feature-item">
+                            <div class="row align-items-center feature-item" data-aos="fade-left">
                                 <div class="col-5">
                                     <img src="img/BEFOREAFTERFITOUT.png" alt="Feature">
                                 </div>
@@ -411,8 +427,16 @@
             <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
         </div>
 
+        
+        <!-- Enlace al archivo JavaScript de AOS -->
+        <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+
+
+
         <!-- JavaScript Libraries -->
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
         <script src="lib/easing/easing.min.js"></script>
         <script src="lib/owlcarousel/owl.carousel.min.js"></script>
@@ -421,5 +445,9 @@
 
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
+        <!-- Inicializa AOS -->
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>

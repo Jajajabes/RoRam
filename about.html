@@ -9,7 +9,7 @@
 
         <!-- Favicon -->
         <link href="img/favicon.ico" rel="icon">
-
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
         <!-- Google Font -->
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400&display=swap" rel="stylesheet">
         
@@ -21,6 +21,28 @@
 
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
+        <style>
+            .page-header {
+                text-align: center;
+                padding: 25px 0;
+                background-color: #f0f0f0;
+            }
+    
+            .page-header h2 {
+                font-size: 88px;
+                font-weight: bold;
+                color: #1a237e;
+                margin-bottom: 20px;
+            }
+    
+            /* Para centrar horizontalmente el elemento animado */
+            .animate__bounceInDown {
+            display: inline-block;
+            /* Ajustar el valor a un número mayor para hacer la animación más lenta */
+            animation-duration: 2s; /* Por ejemplo, aquí la animación dura 2 segundos */
+            }
+        </style>
+
     </head>
 
     <body>
@@ -77,11 +99,12 @@
             <!-- Header End -->
             
             <!-- Page Header Start -->
-            <div class="page-header" style="margin: 0;">
+            <div class="page-header">
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
-                            <h2>About Us</h2>
+                            <!-- Agregar las clases "animate__animated" y "animate__bounceInDown" para aplicar la animación -->
+                            <h2 class="animate__animated animate__bounceInDown">About Us</h2>
                         </div>
                     </div>
                 </div>
